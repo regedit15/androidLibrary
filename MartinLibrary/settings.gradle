@@ -1,0 +1,3 @@
+include ':utilLibrary'
+include ':app'
+rootProject.name = "MartinLibrary"
