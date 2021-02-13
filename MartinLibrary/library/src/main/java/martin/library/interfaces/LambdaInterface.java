@@ -1,4 +1,4 @@
-package martin.library.Interfaces;
+package martin.library.interfaces;
 
 public interface LambdaInterface {
     public void execute();

@@ -1,4 +1,4 @@
-package martin.library;
+package martin.library.services;
 
 import android.content.Context;
 import android.text.Editable;
@@ -8,7 +8,7 @@ import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
 import java.util.Locale;
 
-import martin.library.Interfaces.LambdaInterfaceWithOneParameterString;
+import martin.library.interfaces.LambdaInterfaceWithOneParameterString;
 
 public class UtilService {
 
