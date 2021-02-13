@@ -6,6 +6,7 @@ import android.text.Spanned;
 import java.util.regex.Pattern;
 
 public class InputFilterCustomDecimals implements InputFilter {
+
     private Pattern pattern;
 
     public InputFilterCustomDecimals(int digitsBeforeZero, int digitsAfterZero) {
