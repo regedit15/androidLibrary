@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 
 public class InputFilterCustomDecimals implements InputFilter {
 
-    private Pattern pattern;
+    private static Pattern pattern;
 
     public InputFilterCustomDecimals(int digitsBeforeZero, int digitsAfterZero) {
         pattern = Pattern.compile("[0-9]*+((\\.[0-9]{0,1})?)||(\\.)?");

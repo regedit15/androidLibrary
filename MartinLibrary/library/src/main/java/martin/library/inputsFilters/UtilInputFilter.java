@@ -4,17 +4,17 @@ import android.text.InputFilter;
 
 public class UtilInputFilter {
 
-    private InputFilter[] inputFilterDosDecimales = new InputFilter[]{new InputFilterDosDecimales()};
+    private static InputFilter[] inputFilterDosDecimales = new InputFilter[]{new InputFilterDosDecimales()};
 
     public UtilInputFilter() {
 
     }
 
-    public InputFilter[] getInputFilterDosDecimales() {
+    public static InputFilter[] getInputFilterDosDecimales() {
         return inputFilterDosDecimales;
     }
 
-    public InputFilter[] getInputFilterCustomDecimals(int digitsBeforeZero, int digitsAfterZero) {
+    public static InputFilter[] getInputFilterCustomDecimals(int digitsBeforeZero, int digitsAfterZero) {
         return new InputFilter[]{new InputFilterCustomDecimals(digitsBeforeZero, digitsAfterZero)};
     }
 
