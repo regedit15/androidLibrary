@@ -16,11 +16,11 @@ public class UtilInputFilter {
         return new InputFilter[]{new InputFilterCustomDecimals(digitsBeforeZero, digitsAfterZero)};
     }
 
-    public static InputFilter[] getInputFilterPorcentajeConCero(int digitsBeforeZero, int digitsAfterZero) {
+    public static InputFilter[] getInputFilterPorcentajeConCero() {
         return new InputFilter[]{new InputFilterPorcentaje()};
     }
 
-    public static InputFilter[] getInputFilterPorcentajeSinCero(int digitsBeforeZero, int digitsAfterZero) {
+    public static InputFilter[] getInputFilterPorcentajeSinCero() {
         return new InputFilter[]{new InputFilterPorcentaje(true)};
     }
 
