@@ -7,7 +7,6 @@ import java.util.regex.Pattern;
 
 public class InputFilterPorcentaje implements InputFilter {
 
-
     private Pattern pattern;
 
     public InputFilterPorcentaje() {
