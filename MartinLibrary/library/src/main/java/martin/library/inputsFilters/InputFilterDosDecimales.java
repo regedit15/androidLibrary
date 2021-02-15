@@ -6,7 +6,7 @@ import android.text.Spanned;
 import java.util.regex.Pattern;
 
 public class InputFilterDosDecimales implements InputFilter {
-    private Pattern pattern = Pattern.compile("[0-9]*+((\\.[0-9]{0,1})?)||(\\.)?");
+    private Pattern pattern = Pattern.compile("^(([1-9]{1}[0-9]*)|0{1})?(\\.[0-9]{1,2})?$");
 
     public InputFilterDosDecimales() {
 
