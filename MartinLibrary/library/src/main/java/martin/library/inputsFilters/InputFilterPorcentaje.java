@@ -27,6 +27,6 @@ public class InputFilterPorcentaje implements InputFilter {
 
     @Override
     public CharSequence filter(CharSequence source, int start, int end, Spanned dest, int dstart, int dend) {
-        return pattern.matcher(dest).matches() ? null : "";
+        return pattern.matcher(dest.toString() + source).matches() ? null : "";
     }
 }

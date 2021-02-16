@@ -10,11 +10,12 @@ public class InputFilterCustomDecimals implements InputFilter {
     private static Pattern pattern;
 
     public InputFilterCustomDecimals(int digitsBeforeZero, int digitsAfterZero) {
-        pattern = Pattern.compile("[0-9]*+((\\.[0-9]{0,1})?)||(\\.)?");
+        pattern = Pattern.compile("^(([1-9]{1}[0-9]{0," + (digitsBeforeZero - 1) + "})|0{1})?(\\.)?(\\.[0-9]{1," + digitsAfterZero + "})?$");
     }
 
     @Override
     public CharSequence filter(CharSequence source, int start, int end, Spanned dest, int dstart, int dend) {
-        return pattern.matcher(dest).matches() ? null : "";
+        return pattern.matcher(source.toString() + dest).matches() ? null : "";
     }
+
 }
